@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Course registration form for an online learning platform" />
+    <title>Course Registration</title>
+</head>
+<body>
+
+    <h1>Course Registration Form</h1>
+
+    <form method="POST" action="/submit-registration" enctype="multipart/form-data">
+
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required /><br /><br />
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required /><br /><br />
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="e.g. +1234567890" pattern="[0-9+]{10,15}" /><br /><br />
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" /><br /><br />
+
+            <label for="profile">Profile Picture:</label>
+            <input type="file" id="profile" name="profile" accept="image/*" /><br /><br />
+        </fieldset>
+
+        <!-- Academic Background Section -->
+        <fieldset>
+            <legend>Academic Background</legend>
+
+            <label for="education">Current Education Level:</label>
+            <select id="education" name="education">
+                <option value="highschool">High School</option>
+                <option value="bachelor">Bachelor's</option>
+                <option value="master">Master's</option>
+                <option value="phd">PhD</option>
+            </select><br /><br />
+
+            <label for="field">Field of Study:</label>
+            <input type="text" id="field" name="field" placeholder="e.g. Computer Science" /><br /><br />
+
+            <label for="experience">Years of Experience in Programming:</label>
+            <input type="number" id="experience" name="experience" min="0" max="20" /><br /><br />
+        </fieldset>
+
+        <!-- Course Preferences Section -->
+        <fieldset>
+            <legend>Course Preferences</legend>
+
+            <p>Preferred Learning Mode:</p>
+            <input type="radio" id="online" name="mode" value="online" required />
+            <label for="online">Online</label>
+            <input type="radio" id="offline" name="mode" value="offline" />
+            <label for="offline">Offline</label>
+            <input type="radio" id="hybrid" name="mode" value="hybrid" />
+            <label for="hybrid">Hybrid</label><br /><br />
+
+            <p>Course Categories:</p>
+            <input type="checkbox" id="webdev" name="categories" value="web-development" />
+            <label for="webdev">Web Development</label>
+            <input type="checkbox" id="mobile" name="categories" value="mobile-app" />
+            <label for="mobile">Mobile App Development</label>
+            <input type="checkbox" id="datasci" name="categories" value="data-science" />
+            <label for="datasci">Data Science</label>
+            <input type="checkbox" id="aiml" name="categories" value="ai-ml" />
+            <label for="aiml">AI/ML</label>
+            <input type="checkbox" id="devops" name="categories" value="devops" />
+            <label for="devops">DevOps</label><br /><br />
+
+            <p>Preferred Schedule:</p>
+            <input type="radio" id="weekdays" name="schedule" value="weekdays" required />
+            <label for="weekdays">Weekdays</label>
+            <input type="radio" id="weekends" name="schedule" value="weekends" />
+            <label for="weekends">Weekends</label>
+            <input type="radio" id="flexible" name="schedule" value="flexible" />
+            <label for="flexible">Flexible</label><br /><br />
+        </fieldset>
+
+        <!-- Additional Information Section -->
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label for="experience-level">Programming Experience Level (1-10):</label>
+            <input type="range" id="experience-level" name="experience-level" min="1" max="10" /><br /><br />
+
+            <label for="comments">Special Requirements or Comments:</label><br />
+            <textarea id="comments" name="comments" rows="4" placeholder="Any additional information..."></textarea><br /><br />
+
+            <p>Preferred Contact Method:</p>
+            <input type="radio" id="contact-email" name="contact-method" value="email" required />
+            <label for="contact-email">Email</label>
+            <input type="radio" id="contact-phone" name="contact-method" value="phone" />
+            <label for="contact-phone">Phone</label>
+            <input type="radio" id="contact-sms" name="contact-method" value="sms" />
+            <label for="contact-sms">SMS</label><br /><br />
+        </fieldset>
+
+        <!-- Terms and Conditions Section -->
+        <fieldset>
+            <legend>Terms and Conditions</legend>
+
+            <input type="checkbox" id="agree" name="agree" required />
+            <label for="agree">I agree to the Terms and Conditions</label><br /><br />
+
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <label for="newsletter">I want to receive newsletters and updates</label><br /><br />
+        </fieldset>
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+
+    </form>
+
+</body>
+</html>
