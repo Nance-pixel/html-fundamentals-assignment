@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal Portfolio Website for a Software Developer" />
+    <title>Nancy - Software Developer</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Nancy</h1>
+        </div>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="home">
+            <h2>Welcome!</h2>
+            <p>I am Nancy, a passionate Software Developer.</p>
+            <p>Building efficient and scalable web applications with modern technologies.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="profile-placeholder.jpg" alt="Professional portrait of Nancy" width="200" />
+            <p>I am a software developer with over 5 years of experience in building dynamic web applications. I specialize in JavaScript, Python, and cloud-based solutions. My passion is solving complex problems and creating seamless user experiences.</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>JavaScript (ES6+)</li>
+                <li>Python</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>RESTful APIs</li>
+                <li>Docker & Kubernetes</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <article>
+                <h3>Project One - Task Manager App</h3>
+                <img src="task-manager-placeholder.jpg" alt="Screenshot of the Task Manager app interface" width="300" />
+                <p>A task management application that helps users organize and track their daily activities efficiently.</p>
+                <h4>Technologies Used:</h4>
+                <ul>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>MongoDB</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Project Two - E-commerce Platform</h3>
+                <img src="ecommerce-placeholder.jpg" alt="Screenshot of the e-commerce platform" width="300" />
+                <p>An online platform for buying and selling products with integrated payment gateways and user-friendly interface.</p>
+                <h4>Technologies Used:</h4>
+                <ul>
+                    <li>Angular</li>
+                    <li>Express.js</li>
+                    <li>MySQL</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>Project Three - Portfolio Website</h3>
+                <img src="portfolio-placeholder.jpg" alt="Screenshot of the Portfolio Website homepage" width="300" />
+                <p>A responsive and interactive portfolio website showcasing my work, achievements, and contact information.</p>
+                <h4>Technologies Used:</h4>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <ol>
+                <li>Bachelor of Technology in Computer Science – XYZ University, 2020</li>
+                <li>Master of Science in Software Engineering – ABC Institute, 2022</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Nancy. All rights reserved.</p>
+        <nav aria-label="Social media links">
+            <ul>
+                <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
